@@ -1,0 +1,79 @@
+body, html {
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color:white
+}
+a:link {
+    color: white;
+}
+a:hover {
+    color: #2d8653;
+}
+
+.hero-image {
+  background-image:url(../content/images/sample2.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+
+
+.flex-container{
+    justify-content: center;
+    float:left;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; /* top-bottom*/
+    justify-content:space-between; /* left-right*/
+    padding-left: 0px;
+    
+    margin-top: 20px;
+    height: auto;
+    min-height: 100px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.flex-container > div{
+   vertical-align: middle;
+   /* height: 30px; -> padding */
+   width: auto;
+   padding: 10px;
+   margin: 2.5px;
+   font-size: 30px;
+   color: white;
+   border: 1px solid black;
+   /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
+   font-size: 20px;
+}
+
+#kasia{
+    font-weight:bolder
+    /* border: 2px solid white; */
+}
+
+#about{
+    margin-left:auto; 
+}
+
+
+#insta-icon{
+   vertical-align: middle;
+
+    height: 30px;
+}
