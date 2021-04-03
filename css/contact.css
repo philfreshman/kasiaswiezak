@@ -1,0 +1,12 @@
+/* body{
+    cursor: auto;
+
+    -webkit-touch-callout: unset;/* iOS Safari */
+  -webkit-user-select:text; 
+     -moz-user-select:text; /* Old versions of Firefox */
+      -ms-user-select:initial;
+          user-select:auto ; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+
+}
+ */

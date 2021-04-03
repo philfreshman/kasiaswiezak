@@ -1,0 +1,38 @@
+#insta{
+    margin-bottom: 3px;
+    padding: 9.4px;
+    margin: 2.5px;
+    margin-right: 10px;
+}
+
+
+.gallery {
+    margin-top: 100px;
+    margin-left: 10px;
+
+    height: auto;
+    width: 84%;
+
+    float: left;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    background-color: green
+
+   
+}
+
+
+.box {
+    margin: 1px;
+    /* padding: 20px; */
+
+
+    width: 500px;
+    height: 200px;
+    
+    background-color: grey;
+}
