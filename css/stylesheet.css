@@ -1,75 +1,19 @@
 @font-face {
 font-display: block;
 font-family: "Nitti Grotesk";
-src: url("https://type.cargo.site/files/NittiGrotesk-Light.woff") format("woff");
-font-style: normal;
-font-weight: 200;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
-}
-@font-face {
-font-display: block;
-font-family: "Nitti Grotesk";
-src: url("https://type.cargo.site/files/NittiGrotesk-LightItalic.woff") format("woff");
-font-style: italic;
-font-weight: 200;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
-}
-@font-face {
-font-display: block;
-font-family: "Nitti Grotesk";
 src: url("https://type.cargo.site/files/NittiGrotesk-Normal.woff") format("woff");
 font-style: normal;
 font-weight: normal;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
 }
-@font-face {
-font-display: block;
-font-family: "Nitti Grotesk";
-src: url("https://type.cargo.site/files/NittiGrotesk-Italic.woff") format("woff");
-font-style: italic;
-font-weight: normal;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
-}
-@font-face {
-font-display: block;
-font-family: "Nitti Grotesk";
-src: url("https://type.cargo.site/files/NittiGrotesk-Bold.woff") format("woff");
-font-style: normal;
-font-weight: bold;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
-}
-@font-face {
-font-display: block;
-font-family: "Nitti Grotesk";
-src: url("https://type.cargo.site/files/NittiGrotesk-BoldItalic.woff") format("woff");
-font-style: italic;
-font-weight: bold;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
-}
-@font-face {
-font-display: block;
-font-family: "Wremena";
-src: url("https://type.cargo.site/files/Wremena-Light.woff") format("woff");
-font-style: normal;
-font-weight: 200;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
-}
+
 @font-face {
 font-display: block;
 font-family: "Wremena";
 src: url("https://type.cargo.site/files/Wremena-Regular.woff") format("woff");
 font-style: normal;
 font-weight: normal;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
 }
-@font-face {
-font-display: block;
-font-family: "Wremena";
-src: url("https://type.cargo.site/files/Wremena-Bold.woff") format("woff");
-font-style: normal;
-font-weight: bold;
-unicode-range: U+0000-DFFF, U+F900-FFFD;
-}
+
 
 :root{
     --following-animation-duration: 750ms;
@@ -80,7 +24,7 @@ body, html {
   height: 100%;
   font-family: "Nitti Grotesk";
   cursor: default;
-  /* padding-left: 5px; */
+  padding-left: 5px;
   /* padding-right: 5px; */
   margin: 0;
 
@@ -99,7 +43,7 @@ body, html {
 
 
 ::-webkit-scrollbar {
-    width: 8px;  
+    width: 10px;  
     background: rgba(255, 255, 255, 0);
 }
 ::-webkit-scrollbar-track {
@@ -161,7 +105,7 @@ a:hover {
     top: 0;
     width: 100%;
     display: block;
-    /* transition: bottom 0.7s; */
+    transition: bottom 0.7s;
     z-index: 1;
   }
 
@@ -169,8 +113,6 @@ a:hover {
 
 #flex-container{
     font-size: 23px;
-
-    transition: 0.5s;
 
     justify-content: center;
     float:left;
@@ -192,6 +134,7 @@ a:hover {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 3px 0px rgb(255, 255, 255);
 
+    transition: 0.7s;
     -webkit-filter:invert(0);
     
 }
@@ -205,7 +148,6 @@ a:hover {
     /* color: white; */
     /* border: 1px solid rgb(112, 112, 112); */
     /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
-
 }
 
 
@@ -263,11 +205,13 @@ a:hover {
     margin-left: 13%;
     float: left;
     overflow-y: scroll;
+    background-color: grey;
 
-    position:absolute;
+    /* position:absolute;
+    right:0px;
     top: 0px;
     bottom:0px;
-    overflow-y:scroll;   
+    overflow-y:scroll;    */
 }
 
 
@@ -290,7 +234,7 @@ p{
 }
 
 h2:hover, p:hover{
-    color:rgba(0, 0, 0, 0.657);
+    color:rgba(0, 0, 0, 0.551);
 }
 
 

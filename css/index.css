@@ -1,5 +1,4 @@
 #kasia{
-    /* margin-left: 10px; */
     border: 1px solid rgba(255, 255, 255, 0.65);
 }
 #about{
@@ -16,7 +15,7 @@
 #insta-icon{
     vertical-align: middle;
     height: 21px;
-    /* -webkit-filter:invert(100); */
+    -webkit-filter:invert(0);
 }
 
 
@@ -42,7 +41,7 @@ a:hover {
 }
 
 
-.flex-container{
+#flex-container{
     font-size: 23px;
 
     justify-content: center;
@@ -64,7 +63,8 @@ a:hover {
     /* padding-left: -10px; */
     /* margin-right: 1%; */
     background-color: rgba(255, 255, 255, 0);
-    background-image: none;
+    box-shadow: none;
+
     
 }
 .flex-container > div{
