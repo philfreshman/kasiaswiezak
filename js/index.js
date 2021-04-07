@@ -1,51 +1,25 @@
-// var img0 = "url('content/images/sample1.jpg')";
-// var img1 = "url('content/images/sample2.jpg')";
-// var img2 = "url('content/images/sample3.jpg')";
 
-// change(0);
-// function change(index){
-//     switch(index){
-//         case 0:
-//             document.getElementById('hero').style.animationName = "fade";
-//             document.getElementById('hero').style.backgroundImage = img1;
-//             setTimeout(function(){ index++; reset_animation(); change(index);},3000)
-//             console.log(index);
-//         break;
+window.onscroll = function() {scrollFunction()};
 
-//         case 2:
-//             document.getElementById('hero').style.animationName = "fade";
-
-//             document.getElementById('hero').style.backgroundImage = img1;
-//             setTimeout(function(){ index++; reset_animation(); change(index);},3000)
-//             console.log(index);
-//         break;
-
-//         case 1:
-//             document.getElementById('hero').style.backgroundImage = img2;
-//             setTimeout(function(){ index=0; reset_animation(); change(index)},3000)
-//             console.log(index);
-//         break;    
-//     }
-// }
+function scrollFunction() {
+  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    // document.getElementById("navbar").style.top = "0";
+    document.getElementById("flex-container").style.backgroundColor="rgba(255, 255, 255, 1)";
+    document.getElementById("flex-container").setAttribute("style","-webkit-filter:invert(100)");
+    document.getElementById("flex-container").style.height="46px";
 
 
 
-// var timedelay = 1;
-// var _delay = setInterval(delayCheck, 100);
+    document.getElementById("kasia").style.border="0px";
 
-// $('.parent').on('mousemove', showAllEvent);
 
-// function delayCheck() {
-//   if (timedelay == 5) {
-//     $('.flex-container').fadeOut(800);
-//     timedelay = 1;
-//   }
-//   timedelay = timedelay + 1;
-// }
+  } else {
+    document.getElementById("flex-container").style.height="70px";
+    document.getElementById("flex-container").setAttribute("style","-webkit-filter:invert(0)");
 
-function showAllEvent() {
-  $('.flex-container').fadeIn();
-  timedelay = 1;
-  clearInterval(_delay);
-  _delay = setInterval(delayCheck, 1000);
+    document.getElementById("kasia").style.border="1px solid black";
+
+
+
+  }
 }

@@ -71,13 +71,21 @@ font-weight: bold;
 unicode-range: U+0000-DFFF, U+F900-FFFD;
 }
 
+:root{
+    --following-animation-duration: 750ms;
+}
 
 
 body, html {
   height: 100%;
   font-family: "Nitti Grotesk";
-  margin: 0;
   cursor: default;
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
+  margin: 0;
+
+
+/* makes text not selecable */
 
 -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -88,8 +96,10 @@ body, html {
 
 }
 
+
+
 ::-webkit-scrollbar {
-    width: 10px;  
+    width: 8px;  
     background: rgba(255, 255, 255, 0);
 }
 ::-webkit-scrollbar-track {
@@ -102,28 +112,27 @@ body, html {
 
 
 
-/*Header */
+/* Buttons */
 
 
 a {
     text-decoration: none;
 }
 a:visited {
-    color: white;
+    color: black;
 }
 a:link {
-    color: white;
+    color: black;
 }
 a:hover {
    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-    /* color: rgb(54, 54, 54); */
-
 }
 
 #kasia{
-    margin-left: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.65);
+    font-weight:500;
+    border: 1px solid rgba(0, 0, 0, 0.65);
 }
+
 #about{
     margin-left:auto; 
 }
@@ -131,14 +140,13 @@ a:hover {
 #insta{
     margin-bottom: 3px;
     padding: 9.4px;
-    margin: 2.5px;
     margin-right: 20px;
 }
 
 #insta-icon{
     vertical-align: middle;
     height: 21px;
-    /* -webkit-filter:invert(100); */
+    -webkit-filter:invert(100);
 }
 
 
@@ -148,41 +156,57 @@ a:hover {
 
 /* Header */
 
-.flex-container{
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    /* transition: bottom 0.7s; */
+    z-index: 1;
+  }
+
+
+
+#flex-container{
     font-size: 23px;
+
+    transition: 0.5s;
 
     justify-content: center;
     float:left;
-    position:fixed;
+    position:sticky;
 
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center; /* top-bottom*/
+    align-items: center; 
+    align-items: none; /* top-bottom*/
     justify-content:space-between; /* left-right*/
-    padding-left: 0px;
     
     margin-top: 0px;
-    padding-bottom: 30px;
     height: 70px;
     width: 100%;
-    /* padding-left: -10px; */
-    /* margin-right: 1%; */
-    /* background-color: rgba(255, 203, 203, 0.438); */
-    background-image: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.97),rgba(255, 255, 255, 0.90),rgba(255, 255, 255, 0.37), rgba(255, 255, 255, 0));
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px 0px rgb(255, 255, 255);
+
+    -webkit-filter:invert(0);
     
 }
-.flex-container > div{
+#flex-container > div{
     vertical-align: middle;
     width: auto;
     padding: 10px;
-    margin: 2.5px;
+    padding-top: 10px;
+
+    /* margin: 2.5px; */
     /* color: white; */
     /* border: 1px solid rgb(112, 112, 112); */
     /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
-}
 
+}
 
 
 
@@ -220,63 +244,10 @@ a:hover {
     animation: slideThreeAnim 18s infinite;
 }
 
-
-
     
-@keyframes slideTwoAnim {
-    0% {
-        opacity: 0;
-    }
-    17% {
-        opacity: 0;
-    }
-    33% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    67% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-    }
-@keyframes slideThreeAnim {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    67% {
-        opacity: 1;
-    }
-    83% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes slideFourAnim {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    67% {
-        opacity: 1;
-    }
-    83% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+@keyframes slideTwoAnim {0% {opacity: 0;}17% {opacity: 0;}33% {opacity: 1;}50% {opacity: 1;}67% {opacity: 0;}100% {opacity: 0;}}
+@keyframes slideThreeAnim {0% {opacity: 0;}50% {opacity: 0;}67% {opacity: 1;}83% {opacity: 1;}100% {opacity: 0;}}
+@keyframes slideFourAnim {0% {opacity: 0;}50% {opacity: 0;}67% {opacity: 1;}83% {opacity: 1;}100% {opacity: 0;}}
 
 
 
@@ -285,13 +256,18 @@ a:hover {
 
 /* Common */
 
-.container{
+#content{
     height: auto;
     width: 74%;
     margin-top: 100px;
     margin-left: 13%;
     float: left;
-    /* background-color: rgba(73, 73, 73, 0.356); */
+    overflow-y: scroll;
+
+    position:absolute;
+    top: 0px;
+    bottom:0px;
+    overflow-y:scroll;   
 }
 
 
@@ -304,9 +280,7 @@ h1{
 h2{
     margin:0px;
     font-weight: normal;
-
 }
-
 
 p{
     font-size: 22px;
@@ -315,83 +289,8 @@ p{
     margin-left: 50px;
 }
 
-
-
 h2:hover, p:hover{
     color:rgba(0, 0, 0, 0.657);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-
-
-
-
-@keyframes slideTwoAnim {
-    0% {
-        opacity: 0;
-    }
-    17% {
-        opacity: 0;
-    }
-    33% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    67% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-    }
-@keyframes slideThreeAnim {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    67% {
-        opacity: 1;
-    }
-    83% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes slideFourAnim {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    67% {
-        opacity: 1;
-    }
-    83% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
- */

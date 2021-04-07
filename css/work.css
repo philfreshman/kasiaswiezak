@@ -1,38 +1,45 @@
 #insta{
     margin-bottom: 3px;
     padding: 9.4px;
-    margin: 2.5px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 
 .gallery {
     margin-top: 100px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 
     height: auto;
-    width: 84%;
+    width: 100%;
 
     float: left;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
 
-    background-color: green
+    /* background-color: rgb(206, 206, 206) */
 
    
 }
 
 
 .box {
-    margin: 1px;
-    /* padding: 20px; */
+    margin: 30px;
+    margin-bottom: 100px;
 
+    /* master */
+    width: 600px; 
 
-    width: 500px;
-    height: 200px;
+    height: 400px;
+    height: auto;
     
-    background-color: grey;
+    text-align: center;
+    /* background-color: rgb(255, 252, 97); */
+}
+
+.box img {
+    width:100%;
 }
