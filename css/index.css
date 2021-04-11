@@ -1,5 +1,5 @@
 #kasia{
-    border: 1px solid rgba(255, 255, 255, 0.65);
+    /* border: 1px solid rgba(255, 255, 255, 0.65); */
 }
 #about{
     margin-left:auto; 
@@ -8,14 +8,15 @@
 #insta{
     margin-bottom: 3px;
     padding: 9.4px;
-    /* margin: 2.5px; */
     margin-right: 20px;
 }
 
 #insta-icon{
     vertical-align: middle;
     height: 21px;
+    padding-right: 10px;
     -webkit-filter:invert(0);
+
 }
 
 
@@ -54,7 +55,8 @@ a:hover {
     flex-wrap: wrap;
     align-items: center; /* top-bottom*/
     justify-content:space-between; /* left-right*/
-    padding-left: 0px;
+    padding-left: 15px;
+
     
     margin-top: 0px;
     padding-bottom: 30px;

@@ -1,20 +1,3 @@
-#kasia{
-    font-weight:500;
-    border: 1px solid rgba(0, 0, 0, 0.65);
-}
-a {
-    text-decoration: none;
-}
-a:visited {
-    color: black;
-}
-a:link {
-    color: black;
-}
-a:hover {
-   text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-}
-#insta-icon{
-    vertical-align: middle;
-    height: 21px;
+#insta{
+    margin-right: 30px;
 }

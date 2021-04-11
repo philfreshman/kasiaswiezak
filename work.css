@@ -1,15 +1,8 @@
-body, html {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 #insta{
     margin-bottom: 3px;
     padding: 9.4px;
     margin-right: 20px;
 }
-
-
 
 
 .gallery {
@@ -25,35 +18,32 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
 
-    background-color: rgb(206, 206, 206)
+    /* background-color: rgb(206, 206, 206) */
 }
 
 
 .box {
     position: relative;
 
-    /* margin: 20px; */
-    /* margin-left: 10px; */
-    /* margin-right: 10px; */
-    margin-bottom: 10px;
+    margin: 30px;
+    margin-bottom: 60px;
 
-    padding: 10px;
-
-    width: 460px; 
-    height: 300px;
+    width: 600px; 
+    height: 450px;
     
-    /* text-align: center; */
+    text-align: center;
 
-    background-color: rgb(255, 252, 97);
+    /* background-color: rgb(255, 252, 97); */
 }
 
 .picture{
     object-fit: cover;
+
     position:absolute;
 
     width: 100%;
-    height: 260px;
-    background-color: brown;
+    height:400px;
+    /* background-color: brown; */
 }
 
 .container_img {
@@ -72,13 +62,11 @@ body, html {
     width: 100%;
     bottom: 14px;
 
-    left: 0px;
-    /* text-align: center; */
+    text-align: center;
     /* background-color: blue; */
 }
 
 p{
-    /* margin-left: ; */
     /* font-style: italic; */
 }
 
