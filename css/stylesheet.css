@@ -1,55 +1,5 @@
 @font-face {
     font-display: block;
-    font-family: "Nitti Grotesk";
-    src: url("https://type.cargo.site/files/NittiGrotesk-Light.woff") format("woff");
-    font-style: normal;
-    font-weight: 200;
-    unicode-range: U+0000-DFFF, U+F900-FFFD;
-    }
-    @font-face {
-    font-display: block;
-    font-family: "Nitti Grotesk";
-    src: url("https://type.cargo.site/files/NittiGrotesk-LightItalic.woff") format("woff");
-    font-style: italic;
-    font-weight: 200;
-    unicode-range: U+0000-DFFF, U+F900-FFFD;
-    }
-    @font-face {
-    font-display: block;
-    font-family: "Nitti Grotesk";
-    src: url("https://type.cargo.site/files/NittiGrotesk-Normal.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    unicode-range: U+0000-DFFF, U+F900-FFFD;
-    }
-    @font-face {
-    font-display: block;
-    font-family: "Nitti Grotesk";
-    src: url("https://type.cargo.site/files/NittiGrotesk-Italic.woff") format("woff");
-    font-style: italic;
-    font-weight: normal;
-    unicode-range: U+0000-DFFF, U+F900-FFFD;
-    }
-    @font-face {
-    font-display: block;
-    font-family: "Nitti Grotesk";
-    src: url("https://type.cargo.site/files/NittiGrotesk-Bold.woff") format("woff");
-    font-style: normal;
-    font-weight: bold;
-    unicode-range: U+0000-DFFF, U+F900-FFFD;
-    }
-    @font-face {
-    font-display: block;
-    font-family: "Nitti Grotesk";
-    src: url("https://type.cargo.site/files/NittiGrotesk-BoldItalic.woff") format("woff");
-    font-style: italic;
-    font-weight: bold;
-    unicode-range: U+0000-DFFF, U+F900-FFFD;
-    }
-
-
-    @font-face {
-    font-display: block;
     font-family: "Wremena";
     src: url(/font/WremenaLight/WremenaLight.woff) format("woff");
     font-style: normal;
@@ -61,13 +11,13 @@
 }
 
 
-body, html {
-  height: 100%;
+
+
+body {
   font-family: "Wremena";
   cursor: default;
-  padding-left: 5px;
-  padding-right: 0px;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   color:rgba(0, 0, 0, 0.9);
 
 
@@ -98,58 +48,13 @@ body, html {
 
 
 
-/* Buttons */
-
-
-a {
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-a:visited {
-    color:rgba(0, 0, 0, 0.9);
-}
-a:link {
-    color:rgba(0, 0, 0, 0.9);
-}
-a:hover {
-   /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
-   text-decoration: underline;
-}
-
-#kasia a{
-    margin-left: 7px;
-    letter-spacing: 0.8px;
-    /* border: 1px solid rgba(0, 0, 0, 0.65); */
-}
-
-#about{
-    margin-left:auto; 
-}
-
-#insta{
-    margin-bottom: 3px;
-    padding: 9.4px;
-    margin-right: 20px;
-    margin-right: 0px;
-}
-
-#insta-icon{
-    vertical-align: middle;
-    height: 21px;
-    -webkit-filter:invert(100);
-}
-
-
-
-
-
-
 /* Header */
 
 #navbar {
     position: fixed;
+    padding-left: 10px;
     top: 0;
-    width: 100%;
+    width: 100vw;
     display: block;
     transition: bottom 0.7s;
     z-index: 1;
@@ -158,7 +63,7 @@ a:hover {
 
 
 #flex-container{
-    font-size: 23px;
+    font-size: 20.7px;
 
     justify-content: center;
     float:left;
@@ -173,14 +78,15 @@ a:hover {
     justify-content:space-between; /* left-right*/
     
     margin-top: 0px;
-    height: 70px;
-    width: 100%;
+    height: 63px;
+    width: 100vw;
     padding-left: 5px;
     padding-right: 10px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 3px 0px rgb(255, 255, 255);
 
-    transition: 0.7s;
+    /* box-shadow: 0px 0px 3px 0px rgb(255, 255, 255); */
+
+    transition: 0s;
     -webkit-filter:invert(0);
     
 }
@@ -199,6 +105,51 @@ a:hover {
     /* border: 1px solid rgb(112, 112, 112); */
     /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
 }
+
+/* Buttons */
+
+
+a {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+a:visited {
+    color:rgba(0, 0, 0, 0.9);
+}
+a:link {
+    color:rgba(0, 0, 0, 0.9);
+}
+a:hover {
+   text-decoration: underline;
+}
+
+#kasia a{
+    margin-left: 7px;
+    /* letter-spacing: 0.8px; */
+}
+
+#about{
+    margin-left:auto; 
+}
+
+#contact{
+    margin-right: 28px;
+}
+
+#insta{
+    margin-bottom: 3px;
+    padding: 9.4px;
+    margin-right: 20px;
+    margin-right: 0px;
+}
+
+#insta-icon{
+    vertical-align: middle;
+    height: 21px;
+    -webkit-filter:invert(100);
+}
+
+
 
 
 
@@ -222,17 +173,14 @@ a:hover {
 }
     
 .img1 {
-    background-image: url("/content/images/2_Wohnzimmer_3.jpg");
-    /* background-image: url("/workinprogress/content/images/sample1.jpg"); */
+    background-image: url("/content/images/2_Wohnzimmer_3.webp");
 }
 .img2 {
-    background-image: url("/content/images/5_Loft_3.jpg");
-    /* background-image: url("/workinprogress/content/images/sample2.jpg"); */
+    background-image: url("/content/images/5_Loft_3.webp");
     animation: slideTwoAnim 18s infinite;
 }
 .img3 {
-    background-image: url("/content/images/9Club.jpg");
-    /* background-image: url("/workinprogress/content/images/sample3.jpg"); */
+    background-image: url("/content/images/9Club.webp");
     animation: slideThreeAnim 18s infinite;
 }
 
@@ -249,19 +197,15 @@ a:hover {
 /* Common */
 
 #content{
+
+    z-index: 0;
     /* height: auto; */
     width: 74%;
-    margin-top: 100px;
-    margin-left: 13%;
-    float: left;
-    /* overflow-y: scroll; */
-    /* background-color: grey; */
+    margin-top: 13vh;
 
-    /* position:absolute;
-    right:0px;
-    top: 0px;
-    bottom:0px;
-    overflow-y:scroll;    */
+    margin-left: 14%;
+    float: left;
+
 }
 
 

@@ -6,8 +6,8 @@ function scrollFunction() {
     // On scroll
     document.getElementById("flex-container").style.backgroundColor="rgba(255, 255, 255, 1)";
     document.getElementById("flex-container").setAttribute("style","-webkit-filter:invert(100)");
-    document.getElementById("flex-container").style.height="46px";
-    // document.getElementById("flex-container").style.transition="0.7s"
+    document.getElementById("flex-container").style.height="54.7px";
+    document.getElementById("flex-container").style.transition="0.7s"
 
     document.getElementById("kasia").style.border="0px";
 
@@ -15,10 +15,12 @@ function scrollFunction() {
   } else {
     // Normal state:
 
-    document.getElementById("flex-container").style.height="70px";
+    document.getElementById("flex-container").style.height="63px";
     document.getElementById("flex-container").setAttribute("style","-webkit-filter:invert(0)");
+    document.getElementById("flex-container").style.transition="0.7s"
 
-    document.getElementById("kasia").style.border="1px solid black";
+
+    // document.getElementById("kasia").style.border="1px solid black";
 
   }
 }
