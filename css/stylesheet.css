@@ -1,7 +1,7 @@
 @font-face {
     font-display: block;
     font-family: "Wremena";
-    src: url(/font/WremenaLight/WremenaLight.woff) format("woff");
+    src: url(../font/WremenaLight/WremenaLight.woff) format("woff");
     font-style: normal;
     }
 
@@ -173,14 +173,14 @@ a:hover {
 }
     
 .img1 {
-    background-image: url("/content/images/2_Wohnzimmer_3.webp");
+    background-image: url("../content/images/2_Wohnzimmer_3.webp");
 }
 .img2 {
-    background-image: url("/content/images/5_Loft_3.webp");
+    background-image: url("../content/images/5_Loft_3.webp");
     animation: slideTwoAnim 18s infinite;
 }
 .img3 {
-    background-image: url("/content/images/9Club.webp");
+    background-image: url("../content/images/9Club.webp");
     animation: slideThreeAnim 18s infinite;
 }
 
