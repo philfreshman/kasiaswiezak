@@ -173,14 +173,14 @@ a:hover {
 }
     
 .img1 {
-    background-image: url("../content/images/2_Wohnzimmer_3.webp");
+    background-image: url("../content/images/webp_full.size/2_Wohnzimmer_3.webp");
 }
 .img2 {
-    background-image: url("../content/images/5_Loft_3.webp");
+    background-image: url("../content/images/webp_full.size/5_Loft_3.webp");
     animation: slideTwoAnim 18s infinite;
 }
 .img3 {
-    background-image: url("../content/images/9Club.webp");
+    background-image: url("../content/images/webp_full.size/9Club.webp");
     animation: slideThreeAnim 18s infinite;
 }
 
@@ -230,5 +230,7 @@ p{
 h2:hover, p:hover{
     color:rgba(0, 0, 0, 0.551);
 }
+
+
 
 
