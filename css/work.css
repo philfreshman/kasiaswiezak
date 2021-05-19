@@ -11,20 +11,29 @@
 
 
 .gallery {
-    margin-top: 130px;
+    /* margin-top: 130px; */
 
     height: auto;
     width: 100%;
 
-    top: 0px;
-    float: left;
+    overflow: auto;
+    position: absolute;
+
+    padding-top: 6.5vh;
+
+
+    top: 6vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* float: left; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-shrink: 0;
     justify-content:space-around;
 
-    /* background-color: rgb(206, 206, 206) */
 }
 
 
