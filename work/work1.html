@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="../content/favicon/favicon-32x32.png">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/work1.css">
-    <script src="../js/index.js"></script>
 </head>
 
 
@@ -55,13 +54,67 @@
 
 
 
-<div id="content">
-<h1>Duis aute irure dolor in reprehenderit</h1></br></br>
-<div class="description">
-<p>Something Lorem ipsum dolor sit amet, conse ctetur ad ipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magnalaboris nisi.</p>
+<div id="content" onscroll="getPosition()">
+<div id="measure"></div>
+
+
+
+
+
+    <h1>Duis aute irure dolor in reprehenderit</h1></br></br>
+    <div class="description">
+    <p>Something Lorem ipsum dolor sit amet, conse ctetur ad ipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magnalaboris nisi.</p>
 </div>
 
 
+<script>
 
+var fuck = document.getElementById("measure");
+let height;
+
+
+
+function getPosition(){
+    console.log(`position = ${parseInt(fuck.getBoundingClientRect().top)}`);
+    height = parseInt(fuck.getBoundingClientRect().top);
+    console.log(height);
+    colorHeader();
+}
+
+
+
+
+function colorHeader() {
+  if (height >= 80) {
+
+    // Normal state:
+    document.getElementById("flex-container").style.height="6vh";
+
+
+    document.getElementById("flex-container").setAttribute("style","-webkit-filter:invert(0)");
+    document.getElementById("flex-container").style.transition="0.7s"
+    
+
+  } else {
+
+    // On scroll
+    document.getElementById("flex-container").style.height="30vh";
+
+    // document.getElementById("flex-container").style.backgroundColor="rgba(255, 255, 255, 1)";
+    document.getElementById("flex-container").setAttribute("style","-webkit-filter:invert(100)");
+    document.getElementById("flex-container").style.transition="0.7s"
+
+
+  }
+}
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>

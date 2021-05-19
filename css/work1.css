@@ -6,9 +6,36 @@
     margin-top: 13vh;
     /* margin-left: 14%; */
     margin-right: 50vw;
-    float: left;
+    /* float: left; */
     /* background-color: chartreuse; */
 }
+
+
+
+#content{
+    padding-top: 5vh;
+    padding-left: 14%;
+    padding-right: 10%;
+
+    overflow: auto;
+    position: absolute;
+
+
+    top: 6vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+
+
+
+
+
+
+
 
 .description{
     /* position:fixed; */

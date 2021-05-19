@@ -7,7 +7,7 @@
 
 
 :root{
-    --following-animation-duration: 750ms;
+    --following-animation-duration: 350ms;
 }
 
 
@@ -52,58 +52,58 @@ body {
 
 #navbar {
     position: fixed;
-    padding-left: 10px;
     top: 0;
-    width: 100vw;
-    display: block;
+    height: 6vh;
     transition: bottom 0.7s;
-    z-index: 1;
   }
-
 
 
 #flex-container{
     font-size: 20.7px;
 
     justify-content: center;
-    float:left;
-    position:fixed;
-
 
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center; 
-    align-items: none; /* top-bottom*/
+    align-items: center; /* top-bottom*/
     justify-content:space-between; /* left-right*/
     
-    margin-top: 0px;
-    height: 63px;
+    height: 6vh;
     width: 100vw;
-    padding-left: 5px;
-    padding-right: 10px;
-    background-color: rgb(255, 255, 255);
-
-    /* box-shadow: 0px 0px 3px 0px rgb(255, 255, 255); */
-
-    transition: 0s;
-    -webkit-filter:invert(0);
-    
+    /* padding-left: 1.5vw; */
+    padding-right: 1.5vw;
+    background-color:white;
 }
-#flex-container > div{
-    vertical-align: middle;
-    width: auto;
-    padding: 10px;
-    padding-top: 10px;
-    padding-right: 40px;
-    /* background-color: burlywood; */
 
+
+
+
+
+
+
+#flex-container > div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1.6vw;
+    padding-right: 1.5vw;
+    align-items: center;
+    text-align: center;
+
+    /* margin-left: 1px; */
 
 
     /* margin: 2.5px; */
     /* color: white; */
-    /* border: 1px solid rgb(112, 112, 112); */
     /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
+}
+
+#flex-container > div:last-of-type{ 
+    margin-right: 1.2vw;
+}
+
+#flex-container > div:first-of-type{ 
+    padding-left: 0vw;
+    margin-left: 2.5vw;
 }
 
 /* Buttons */
@@ -196,17 +196,37 @@ a:hover {
 
 /* Common */
 
-#content{
+/* #content{
 
     z-index: 0;
-    /* height: auto; */
     width: 74%;
     margin-top: 13vh;
 
     margin-left: 14%;
     float: left;
 
+} */
+
+
+
+#content{
+    padding-top: 5vh;
+    padding-left: 14%;
+    padding-right: 10%;
+
+    overflow: auto;
+    position: absolute;
+
+
+    top: 6vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
 }
+
+
+
 
 
 h1{
@@ -233,4 +253,12 @@ h2:hover, p:hover{
 
 
 
+
+.footer {
+    width: 100%;
+    height: 100px;
+    position:relative;
+
+    background-color: white;
+}
 
