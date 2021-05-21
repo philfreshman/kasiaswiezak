@@ -70,7 +70,6 @@ body {
     
     height: 6vh;
     width: 100vw;
-    /* padding-left: 1.5vw; */
     padding-right: 1.5vw;
     background-color:white;
 }
@@ -89,12 +88,6 @@ body {
     align-items: center;
     text-align: center;
 
-    /* margin-left: 1px; */
-
-
-    /* margin: 2.5px; */
-    /* color: white; */
-    /* text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey; */
 }
 
 #flex-container > div:last-of-type{ 
@@ -196,17 +189,6 @@ a:hover {
 
 /* Common */
 
-/* #content{
-
-    z-index: 0;
-    width: 74%;
-    margin-top: 13vh;
-
-    margin-left: 14%;
-    float: left;
-
-} */
-
 
 
 #content{
@@ -217,12 +199,10 @@ a:hover {
     overflow: auto;
     position: absolute;
 
-
     top: 6vh;
     left: 0;
     right: 0;
     bottom: 0;
-
 }
 
 
@@ -250,7 +230,6 @@ p{
 h2:hover, p:hover{
     color:rgba(0, 0, 0, 0.551);
 }
-
 
 
 

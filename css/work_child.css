@@ -1,0 +1,119 @@
+.middle{
+    width: 1px;
+    height: 100%;
+    margin-left:50vw;
+    z-index: 2;
+    float:left;
+    position:absolute;
+}
+
+.vertical{
+    width: 100%;
+    height: 1px;
+    margin-top:11vh;
+    z-index: 2;
+    float:left;
+    position:absolute;
+}
+
+h1{
+    margin:0px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+p{
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0px;
+    margin-left: 50px;
+}
+
+
+
+.description{
+    position:absolute;
+    right:0;
+    bottom:0;
+
+    height: auto;
+    width: 80%;
+
+    margin-bottom: 3vh;
+    margin-left: 0;
+}
+
+#content{
+    overflow: auto;
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+    padding:0px;
+    margin: 0px;
+}
+
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+    padding:0px;
+    margin: 0px;
+
+    width: 45.5vw;
+    min-width: 500px;
+}
+
+
+.box{
+    position:relative;
+    
+    height: 45vh;
+    width: 46vw;
+
+    max-width: 46vw;
+    min-width: 500px;
+    
+    margin-bottom: 38vh;
+}
+
+
+
+
+.picture{
+    object-fit: cover;
+    position:absolute;
+
+    width: 100%;
+    height: auto;
+}
+
+
+#one{
+    position: relative;
+
+    height: 32vh;
+    margin-bottom: 10vh;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #two{
+        display: none;
+    }
+  } 

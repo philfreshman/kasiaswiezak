@@ -1,41 +1,22 @@
-
-
-/* #insta{
-    margin-bottom: 3px;
-    padding: 9.4px;
-    padding-right: 40px;
-    margin-right: 0px;
-} */
-
-
-
-
 .gallery {
-    /* margin-top: 130px; */
-
-    height: auto;
-    width: 100%;
-
-    overflow: auto;
-    position: absolute;
-
-    padding-top: 6.5vh;
-
-
-    top: 6vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    /* float: left; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-shrink: 0;
     justify-content:space-around;
 
-}
+    height: auto;
+    width: 100%;
+    padding-top: 6.5vh;
 
+    overflow: auto;
+    position: absolute;
+
+    top: 6vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 .box {
     position: relative;
@@ -44,20 +25,12 @@
     margin-top: 0px;
     margin-bottom: 5vw;
 
-
     width: 29vw; 
     height: 40vh;
 
     min-width: 435px; 
     min-height: 313px;
-
-    
-    
-    /* text-align: center; */
-
-    /* background-color: rgb(255, 252, 97); */
 }
-
 
 
 .picture{
@@ -66,7 +39,6 @@
 
     width: 100%;
     height: 86%;
-    /* background-color: brown; */
 }
 
 .container_img {
@@ -79,10 +51,6 @@
     width:100%;
 }
 
-p{
-    margin: 0px;
-}
-
 .description{
     position:absolute;
 
@@ -90,11 +58,8 @@ p{
     bottom: 10px;
 
     text-align: center;
-    /* background-color: blue; */
 }
 
-
-
-
-
-
+p{
+    margin: 0px;
+}

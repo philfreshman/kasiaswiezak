@@ -1,11 +1,11 @@
-var fuck = document.getElementById("measure");
+const box = document.getElementById("measure");
 let height;
 
 
 
 function getPosition(){
-    console.log(`position = ${parseInt(fuck.getBoundingClientRect().top)}`);
-    height = parseInt(fuck.getBoundingClientRect().top);
+    console.log(`position = ${parseInt(box.getBoundingClientRect().top)}`);
+    height = parseInt(box.getBoundingClientRect().top);
     console.log(height);
     colorHeader();
 }
