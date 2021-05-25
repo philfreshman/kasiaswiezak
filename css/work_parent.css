@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-shrink: 0;
     justify-content:space-around;
+    
+    padding: 0px;
+    margin: 0px;;
 
     height: auto;
     width: 100%;
@@ -16,6 +18,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+    background-color: aliceblue;
 }
 
 .box {
@@ -25,8 +29,9 @@
     margin-top: 0px;
     margin-bottom: 5vw;
 
-    width: 29vw; 
+    width: 30vw; 
     height: 40vh;
+
 
     min-width: 435px; 
     min-height: 313px;
@@ -34,6 +39,8 @@
 
 
 .picture{
+background-color: aquamarine;
+
     object-fit: cover;
     position:absolute;
 

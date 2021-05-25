@@ -241,3 +241,8 @@ h2:hover, p:hover{
     background-color: white;
 }
 
+
+#measure{
+    position: absolute;
+    left: 0px;
+}
